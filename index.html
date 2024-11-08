@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +13,15 @@
         <li><a href="#surgimento"> Surgimento da internet</a></li>
         <li><a href="#como-funciona"> Como Funciona a Internet</a></li>
         <li><a href="#tags"> O que são tags</a></li>
+        <li><a href="#textos"> Falando sobre textos</a></li>
+        <li><a href="#listas"> Criando Listas </a></li>
+        <li><a href="#Citações"> Citações </a></li>
+        <li><a href="#Imagens"> Imagens </a></li>
+        <li><a href="#background"> Background de Fundo</a></li>
+
+        <li> <a href="segunda.html" target="_parent"> Segunda pagina</a></li>
+
+       
     </ul>
     <h2 id="surgimento"> Surgimento da Internet</h2>
     <small> <a href="#inicio"> voltar </a></small>
@@ -52,6 +61,94 @@
 
     <p>Meu primeiro paragrafo.</p>
     <p>  Dessa forma, ao salvar o arquivo com a extensão .html e abri-lo em um navegador, você verá o parágrafo escrito na tela do navegador.</p>
+
+    <h2 id="listas"> Como criar Listas</h2>
+    <p> <a href="#inicio"> voltar </a></small> </p>
+
+
+    <p> tags de listas ordenadas e não ordenadas 
+     <p>As listas são muito importantes quando queremos listar alguns itens no site e também para a criação de menu de navegação.
+
+        As listas ordenadas, como o próprio nome já diz, os itens serão listados de forma ordenada, seja por número, letra, ou algarismos romanos.</p>   
+
+        nos temos a tag ol - lista ordenadas  ela não funciona se colocarmos os textos dentro dela aleatorio precisamos colocar listas usando uma tag que vamos chamar de filhas está tag é li ai colocaremos desta forma abaixo:
+
+        <p> Listas ordenadas</p>
+        <p> Uma lista ordenada começa com a tag <ol> e seus respectivos itens da lista ficam dentro da tag Por padrão as listas ordenadas são ordenadas por números, mas também iremos ver como ordena-la por outros métodos.</p>
+            <p>
+        <ol>
+            <!-- vamos colocar a tag li-->
+             <li> Item 1 - Conhecendo html </li>
+             <li> Item 2 - Como Funciona </li>
+             <li> Item 3 - tags</li>
+        </ol>
+        <!-- lista não ordenada ul exemplo: -->
+         <ul>
+            <li> Item 3.1 Conhecendo html</li>
+            <li> Item 3.2 Como Funciona</li>
+            <li> Item 3.3 tags </li>
+         </ul>
+    </p>
+    <p> <h2 id="textos"><strong> Falando sobre textos</strong></h2>  
+     </p>
+     <p> <a href="#inicio"> voltar </a></small> </p>
+     <!-- // h1, h2, h3, h4, h5, p, i, u, strong, entre outros-->
+     <p> Heading Tags são as marcações de cabeçalho, também conhecida como etiquetas de títulos e subtítulos. Elas ajudam a organizar seu conteúdo
+    </p>
+    <p> As heading tags são classificadas de H1 a H6, onde H1 é o título principal da página e geralmente é usado apenas uma vez, representando o título mais importante. 
+
+        Os títulos subsequentes são marcados com tags H2, H3, e assim por diante, em ordem hierárquica decrescente, indicando a importância relativa dos diferentes segmentos de conteúdo.</p>
+    <hr>
+    <p>A tag H1 é o título principal: deve ser única na página e destacar o tema central do conteúdo.</p>
+    <P> Exemplo H1 </P>    
+    <h1> Titulo principal</h1>
+    <p> As tags H2 representam os subtítulos. Elas dividem o assunto em tópicos relevantes, suportando o H1.</p>
+    <P> <H2> Exemplo 02 de h2 </H2></P>
+    <p> Tags H3 detalham os subtópicos. Utilize-as para desdobrar as seções indicadas pelas tags H2, adicionando mais informações específicas.
+        Mantenha a sequência correta</p>
+    <p> <h3> Exemplo 03 </h3></p>
+    <p> os outros exemplos Abaixo em sequencia:  </p>
+    <ul>
+        <li> <h1> Exemplo 1 </h1></li>
+        <li> <h2> Exemplo 2 </h2></li>
+        <li> <h3> Exemplo 3 </h3></li>
+        <li> <h4> Exemplo 4 </h4></li>
+        <li> <h5> Exemplo 5 </h5></li>
+        <li> <h6> Exemplo 6 </h6></li>
+    </ul>
+
+    <p>Para colocar italico no texto usa a tag i <i> Italico  </i></p>
+    <p> para colocar negrito coloque a tag strong <strong>Negrito</strong> </p>
+    
+    <P> <h2 id="Citações" > Criando Citações ultilizo a tag "blockqote" </H2></P>
+        <a href="#inicio"> voltar </a></small>
+    <blockquote>
+        Utilizar plataformas online com tutoriais, exercícios e referências, como o Codecademy, freeCodeCamp e W3Schools
+    </blockquote>
+    <p> Podemos usar essas tags umas dentro das outras visto que no HTML também existe o atributo cite="" e as aspas simples " ".</p>
+    <p> <q>...</q> você faz um citação inline, ou seja, no meio de um texto. Minha experiência é que serve mais para um destaque, ainda que deveria ser só usado como uma citação real de alguma coisa dita anteriormente. É como usamos o `` aqui no site através do markdown (mas ele tem a semântica de citação de código que aqui é diferente da citação básica). </p>
+    <p> <blockquote>...</blockquote> é o mesmo, porém ele cria parágrafo (em certa medida funciona como um <div> com função mais específica), por isso ele não é exatamente igual ao <q>. Ele deve ser usado para um destaque isolado da citação e possivelmente, mas não necessariamente, decorado com CSS de forma diferente. É como usamos aqui o > no markdown (existe a citação de código também, que é um pouco diferente, mas no fundo cai no mesmo internamente, no HTML). </p>
+    <p>
+        <cite>...</cite> é para definir uma referência e não para colocar a citação, o texto em si, embora possa usar também. Principalmente para indicar quem disse, é mais para colocar um URL com o texto do autor ou material citado, ou seja, indica a fonte. Pode facilitar a formatação e buscas de ferramentas diversas. Pode ser usado dentro do "blockquote".
+    </p>
+   <p> <h2 id="Imagens">Criando Imagens no Html </h2></p> 
+   <a href="#inicio"> voltar </a></small>
+   <p> Para criar imagens com HTML5, pode utilizar o elemento img. Este elemento é vazio, ou seja, não tem conteúdo de texto ou tag de fechamento, e requer pelo menos um atributo para ser útil. O atributo mais comum é o src, que indica o caminho, o nome e a extensão da imagem. 
+    exemplo colocamos uma imagem 
+   </p>
+   <img src="html.png" >
+    <p> Este foi exemplo de imagem</p>
+    <p> <h2 id="background"> Background do fundo</h2></p>
+    <p>
+        Para adicionar uma imagem de fundo, pode especificar o atributo background na etiqueta inicial do elemento BODY.
+    </p>
+    <!-- Para voltar para o inicio da pagina -->
+
+    <a href="#inicio"> voltar </a></small>
+
+    <h2> Referencias </h2>
+    Abra a pagina 2  <a href="segunda.html"> Segunda</a> 
+    
 
 
 </body>
